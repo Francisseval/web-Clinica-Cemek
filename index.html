@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centro CEMEK – Medicina, Estética y Fitness | Rosario</title>
+  <link rel="icon" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Centro Médico, Kinésico y Estético en Rosario. 35 años de experiencia, +25 profesionales y +17 especialidades. Kinesiología, medicina, estética y fitness en Paraguay 1423. Tel: 4409256.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Centro CEMEK">
+  <link rel="canonical" href="https://centrocemek.com.ar/">
+  <link rel="apple-touch-icon" href="assets/logo.png">
+
+  <!-- Local SEO / Geo -->
+  <meta name="geo.region" content="AR-S">
+  <meta name="geo.placename" content="Rosario, Santa Fe, Argentina">
+  <meta name="geo.position" content="-32.9442;-60.6505">
+  <meta name="ICBM" content="-32.9442, -60.6505">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://centrocemek.com.ar/">
+  <meta property="og:title" content="Centro CEMEK – Medicina, Estética y Fitness | Rosario">
+  <meta property="og:description" content="Centro Médico, Kinésico y Estético en Rosario desde 1985. +25 profesionales, +17 especialidades. Kinesiología, medicina, estética y fitness en Paraguay 1423.">
+  <meta property="og:image" content="https://centrocemek.com.ar/assets/hero-poster.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="Centro CEMEK">
+  <meta property="og:locale" content="es_AR">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Centro CEMEK – Medicina, Estética y Fitness | Rosario">
+  <meta name="twitter:description" content="Centro Médico, Kinésico y Estético en Rosario desde 1985. +25 profesionales, +17 especialidades en Paraguay 1423.">
+  <meta name="twitter:image" content="https://centrocemek.com.ar/assets/hero-poster.jpg">
+
+  <!-- Performance -->
+  <link rel="dns-prefetch" href="https://app.cal.com">
+  <link rel="dns-prefetch" href="https://wa.me">
+  <link rel="preload" href="assets/hero-poster.jpg" as="image">
+
+  <!-- Structured Data: MedicalOrganization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalOrganization",
+    "name": "Centro CEMEK",
+    "alternateName": "Centro Médico, Kinésico y Estético",
+    "url": "https://centrocemek.com.ar",
+    "logo": "https://centrocemek.com.ar/assets/logo.png",
+    "image": "https://centrocemek.com.ar/assets/hero-poster.jpg",
+    "description": "Centro Médico, Kinésico y Estético en Rosario desde 1985. Medicina, kinesiología, estética y fitness con +25 profesionales y +17 especialidades.",
+    "foundingDate": "1985",
+    "founder": {
+      "@type": "Person",
+      "name": "Norberto Vergara",
+      "jobTitle": "Kinesiólogo y Quiropráctico"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Paraguay 1423",
+      "addressLocality": "Rosario",
+      "addressRegion": "Santa Fe",
+      "postalCode": "2000",
+      "addressCountry": "AR"
+    },
+    "telephone": ["+54-341-4409256", "+54-341-4470734", "+54-341-4421423"],
+    "sameAs": ["https://www.instagram.com/centrocemek/"],
+    "hasMap": "https://maps.google.com/?q=Paraguay+1423+Rosario+Santa+Fe",
+    "medicalSpecialty": ["Kinesiología", "Quiropraxia", "Cardiología", "Neurología", "Estética Médica", "Nutrición"]
+  }
+  </script>
+
+  <style>
+    :root {
+      --primary: #264873;
+      --primary-dark: #1a3354;
+      --dark: #07003a;
+      --light: #d6e4e8;
+      --light-bg: #f0f5f8;
+      --white: #ffffff;
+      --text: #2d3748;
+      --muted: #718096;
+      --radius: 12px;
+      --shadow: 0 4px 24px rgba(38,72,115,0.10);
+      --shadow-lg: 0 8px 40px rgba(38,72,115,0.18);
+      --transition: all 0.3s ease;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Montserrat', sans-serif; font-size: 16px; line-height: 1.7; color: var(--text); background: var(--white); }
+    img { max-width: 100%; height: auto; display: block; }
+    a { text-decoration: none; color: inherit; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+    /* HEADER */
+    header {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      background: rgba(7,0,58,0.94); backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255,255,255,0.07);
+      transition: var(--transition);
+    }
+    .header-inner { display: flex; align-items: center; justify-content: space-between; height: 72px; gap: 24px; }
+    .header-logo img { height: 36px; width: auto; }
+    nav ul { display: flex; list-style: none; gap: 4px; }
+    nav a { color: rgba(255,255,255,0.82); font-size: 13px; font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase; padding: 8px 14px; border-radius: 6px; transition: var(--transition); }
+    nav a:hover, nav a.active { color: var(--white); background: rgba(255,255,255,0.11); }
+    .header-cta a { display: inline-flex; align-items: center; gap: 7px; background: var(--primary); color: white; font-size: 13px; font-weight: 700; padding: 10px 18px; border-radius: 8px; transition: var(--transition); white-space: nowrap; }
+    .header-cta a:hover { background: var(--primary-dark); transform: translateY(-1px); }
+    .mobile-toggle { display: none; background: none; border: none; cursor: pointer; padding: 6px; flex-direction: column; gap: 5px; }
+    .mobile-toggle span { display: block; width: 24px; height: 2px; background: white; border-radius: 2px; transition: var(--transition); }
+
+    /* HERO */
+    .hero { position: relative; min-height: 100vh; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+    .hero video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; }
+    .hero-overlay { position: absolute; inset: 0; background: rgba(7,0,58,0.62); z-index: 1; }
+    .hero-content { position: relative; z-index: 2; text-align: center; color: white; padding: 130px 24px 90px; max-width: 820px; margin: 0 auto; }
+    .hero-badge { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: var(--light); margin-bottom: 22px; padding: 6px 18px; border: 1px solid rgba(214,228,232,0.38); border-radius: 100px; }
+    .hero h1 { font-size: clamp(3rem, 7vw, 5.2rem); font-weight: 800; line-height: 1.08; margin-bottom: 20px; letter-spacing: -1.5px; }
+    .hero h1 span { color: var(--light); }
+    .hero p { font-size: clamp(1rem, 2.5vw, 1.2rem); color: rgba(255,255,255,0.82); margin-bottom: 42px; max-width: 560px; margin-left: auto; margin-right: auto; }
+    .hero-ctas { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+
+    /* BUTTONS */
+    .btn { display: inline-flex; align-items: center; gap: 8px; padding: 15px 30px; border-radius: 10px; font-size: 14px; font-weight: 700; cursor: pointer; transition: var(--transition); border: 2px solid transparent; letter-spacing: 0.3px; font-family: 'Montserrat', sans-serif; }
+    .btn-primary { background: var(--primary); color: white; border-color: var(--primary); }
+    .btn-primary:hover { background: var(--primary-dark); border-color: var(--primary-dark); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(38,72,115,0.4); }
+    .btn-outline-white { background: transparent; color: white; border-color: rgba(255,255,255,0.55); }
+    .btn-outline-white:hover { background: rgba(255,255,255,0.1); border-color: white; transform: translateY(-2px); }
+    .btn-white { background: white; color: var(--primary); border-color: white; }
+    .btn-white:hover { background: var(--light); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.18); }
+    .btn-outline-light { background: transparent; color: white; border-color: rgba(255,255,255,0.55); }
+    .btn-outline-light:hover { background: rgba(255,255,255,0.1); border-color: white; transform: translateY(-2px); }
+
+    /* SECTIONS */
+    section { padding: 100px 0; }
+    .section-eyebrow { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: var(--primary); margin-bottom: 12px; }
+    .section-title { font-size: clamp(1.9rem, 4vw, 2.8rem); font-weight: 800; color: var(--dark); line-height: 1.15; margin-bottom: 14px; }
+    .section-subtitle { font-size: 1.02rem; color: var(--muted); max-width: 580px; }
+    .section-header { margin-bottom: 60px; }
+    .section-header.center { text-align: center; }
+    .section-header.center .section-subtitle { margin: 0 auto; }
+
+    /* WHY US */
+    .why-us { background: var(--light-bg); }
+    .why-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; }
+    .why-card { background: white; padding: 36px 28px; border-radius: var(--radius); box-shadow: var(--shadow); transition: var(--transition); border-bottom: 3px solid transparent; }
+    .why-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); border-bottom-color: var(--primary); }
+    .why-icon { width: 54px; height: 54px; background: var(--light); border-radius: 14px; display: flex; align-items: center; justify-content: center; margin-bottom: 18px; color: var(--primary); }
+    .why-card h3 { font-size: 1.08rem; font-weight: 700; color: var(--dark); margin-bottom: 9px; }
+    .why-card p { font-size: 0.9rem; color: var(--muted); line-height: 1.65; }
+
+    /* SERVICES */
+    .services-section { background: var(--white); }
+    .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 22px; }
+    .service-card { background: white; border: 1px solid #e2e8f0; border-radius: var(--radius); padding: 32px; transition: var(--transition); position: relative; overflow: hidden; }
+    .service-card::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 4px; background: var(--primary); transform: scaleX(0); transform-origin: left; transition: transform 0.3s ease; }
+    .service-card:hover { box-shadow: var(--shadow-lg); border-color: transparent; transform: translateY(-4px); }
+    .service-card:hover::before { transform: scaleX(1); }
+    .service-icon { font-size: 2rem; margin-bottom: 14px; }
+    .service-card h3 { font-size: 1.15rem; font-weight: 700; color: var(--dark); margin-bottom: 9px; }
+    .service-card p { font-size: 0.89rem; color: var(--muted); line-height: 1.65; margin-bottom: 18px; }
+    .service-link { font-size: 0.86rem; font-weight: 700; color: var(--primary); display: inline-flex; align-items: center; gap: 5px; transition: var(--transition); }
+    .service-link:hover { gap: 9px; }
+
+    /* STATS */
+    .stats { background: var(--dark); padding: 80px 0; }
+    .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; text-align: center; }
+    .stat-num { font-size: clamp(2.6rem, 6vw, 4.2rem); font-weight: 800; color: var(--light); line-height: 1; margin-bottom: 8px; }
+    .stat-label { font-size: 0.82rem; font-weight: 600; color: rgba(255,255,255,0.55); text-transform: uppercase; letter-spacing: 2px; }
+
+    /* GALLERY */
+    .gallery-section { background: var(--light-bg); }
+    .gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+    .gallery-item { overflow: hidden; border-radius: var(--radius); }
+    .gallery-item img { width: 100%; height: auto; display: block; transition: transform 0.5s ease; }
+    .gallery-item:hover img { transform: scale(1.04); }
+
+    /* CTA FINAL */
+    .cta-final { background: linear-gradient(140deg, var(--primary) 0%, var(--dark) 100%); color: white; text-align: center; padding: 100px 0; }
+    .cta-final h2 { font-size: clamp(1.9rem, 4vw, 2.8rem); font-weight: 800; margin-bottom: 16px; }
+    .cta-final p { font-size: 1.08rem; color: rgba(255,255,255,0.78); margin-bottom: 42px; max-width: 560px; margin-left: auto; margin-right: auto; }
+    .cta-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+
+    /* FOOTER */
+    footer { background: var(--dark); color: rgba(255,255,255,0.7); padding: 64px 0 0; border-top: 1px solid rgba(255,255,255,0.05); }
+    .footer-grid { display: grid; grid-template-columns: 1.6fr 1fr 1fr; gap: 48px; padding-bottom: 48px; }
+    .footer-logo img { height: 34px; margin-bottom: 16px; filter: brightness(0) invert(1); }
+    .footer-brand p { font-size: 0.88rem; line-height: 1.7; margin-bottom: 22px; }
+    .footer-social { display: flex; gap: 10px; }
+    .footer-social a { display: inline-flex; align-items: center; justify-content: center; width: 38px; height: 38px; background: rgba(255,255,255,0.08); border-radius: 8px; color: white; transition: var(--transition); }
+    .footer-social a:hover { background: var(--primary); transform: translateY(-2px); }
+    .footer-col h4 { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; color: white; margin-bottom: 20px; }
+    .footer-col ul { list-style: none; }
+    .footer-col ul li { font-size: 0.88rem; padding: 5px 0; }
+    .footer-col ul li a { color: rgba(255,255,255,0.62); transition: var(--transition); }
+    .footer-col ul li a:hover { color: var(--light); }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.06); padding: 22px 0; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+    .footer-bottom p { font-size: 0.8rem; color: rgba(255,255,255,0.35); }
+    .footer-nav { display: flex; gap: 20px; list-style: none; }
+    .footer-nav a { font-size: 0.8rem; color: rgba(255,255,255,0.35); transition: var(--transition); }
+    .footer-nav a:hover { color: var(--light); }
+
+    /* MODAL */
+    .modal-overlay {
+      display: none; position: fixed; inset: 0; z-index: 2000;
+      background: rgba(7,0,58,0.78); backdrop-filter: blur(5px);
+      align-items: center; justify-content: center; padding: 20px;
+    }
+    .modal-overlay.open { display: flex; }
+    .modal-box {
+      background: white; border-radius: 16px; width: 100%;
+      max-width: 920px; max-height: 90vh; overflow-y: auto;
+      position: relative; box-shadow: 0 24px 80px rgba(7,0,58,0.45);
+      display: flex; flex-direction: column;
+    }
+    .modal-header {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 18px 24px; border-bottom: 1px solid #e2e8f0;
+      position: sticky; top: 0; background: white; z-index: 1; flex-shrink: 0;
+    }
+    .modal-header-left { display: flex; align-items: center; gap: 12px; }
+    .modal-header-left span { font-size: 1.4rem; }
+    .modal-header h3 { font-size: 1.05rem; font-weight: 700; color: var(--dark); }
+    .modal-header p { font-size: 0.82rem; color: var(--muted); margin-top: 2px; }
+    .modal-close {
+      width: 36px; height: 36px; background: var(--light-bg); border: none;
+      border-radius: 8px; cursor: pointer; display: flex; align-items: center;
+      justify-content: center; color: var(--text); font-size: 1.1rem;
+      transition: var(--transition); flex-shrink: 0;
+    }
+    .modal-close:hover { background: #e2e8f0; color: var(--primary); }
+    .modal-body { flex: 1; min-height: 640px; }
+    #cal-booking-placeholder { width: 100%; min-height: 640px; }
+    #cal-booking-placeholder iframe { border: none !important; }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      .stats-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 768px) {
+      .modal-overlay { padding: 10px; }
+      .modal-box { max-width: 95vw; max-height: 95vh; border-radius: 12px; }
+      #cal-booking-placeholder { min-height: 580px; }
+    }
+    @media (max-width: 768px) {
+      section { padding: 70px 0; }
+      nav, .header-cta { display: none; }
+      .mobile-toggle { display: flex; }
+      nav.open { display: flex; position: fixed; top: 72px; left: 0; right: 0; background: var(--dark); padding: 16px; flex-direction: column; border-top: 1px solid rgba(255,255,255,0.07); }
+      nav.open ul { flex-direction: column; gap: 2px; }
+      nav.open a { display: block; padding: 12px 16px; }
+      .gallery-grid { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; gap: 30px; }
+      .footer-bottom { flex-direction: column; text-align: center; }
+    }
+    @media (max-width: 480px) {
+      .hero h1 { font-size: 2.4rem; }
+      .hero-ctas { flex-direction: column; align-items: center; }
+      .stats-grid { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header id="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="header-logo">
+        <img src="assets/logo.png" alt="Centro CEMEK – Medicina, Estética y Fitness">
+      </a>
+      <nav id="main-nav">
+        <ul>
+          <li><a href="index.html" class="active">Inicio</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="header-cta">
+        <a href="#" onclick="openModal(event)">
+          <svg width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+          Sacar Turno
+        </a>
+      </div>
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO — SCROLL-VIDEO-SECTION -->
+  <section class="hero">
+    <video src="assets/hero.mp4" poster="assets/hero-poster.jpg" playsinline muted loop preload="auto" autoplay></video>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="hero-badge">Rosario, Santa Fe · Desde 1985</span>
+      <h1>Centro <span>CEMEK</span></h1>
+      <p>Un espacio integral donde la medicina, la estética y el fitness se unen para mejorar tu calidad de vida.</p>
+      <div class="hero-ctas">
+        <a href="#" onclick="openModal(event)" class="btn btn-primary">Solicitar Turno</a>
+        <a href="tel:4409256" class="btn btn-outline-white">
+          <svg width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+          Llamar ahora
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- POR QUÉ ELEGIRNOS -->
+  <section class="why-us">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-eyebrow">Por qué elegirnos</span>
+        <h2 class="section-title">Un centro al servicio de tu salud</h2>
+        <p class="section-subtitle">Combinamos experiencia, tecnología y calidez humana para acompañarte en cada etapa de tu bienestar.</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-icon">
+            <svg width="26" height="26" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          </div>
+          <h3>35 años de trayectoria</h3>
+          <p>Desde 1985 al servicio de los rosarinos. Fundado por el Kinesiólogo Norberto Vergara, graduado en la Anglo European College en Quiropraxia.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">
+            <svg width="26" height="26" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          </div>
+          <h3>+25 profesionales</h3>
+          <p>Un equipo de especialistas de excelencia en más de 17 disciplinas, comprometidos con tu salud y bienestar integral.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">
+            <svg width="26" height="26" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+          </div>
+          <h3>Centro integral</h3>
+          <p>Medicina, estética y fitness en un edificio de tres pisos en Paraguay 1423. Todo lo que necesitás para tu salud, en un solo lugar.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">
+            <svg width="26" height="26" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+          </div>
+          <h3>Alta tecnología</h3>
+          <p>Equipos de última generación para diagnóstico y tratamiento: ecografías, sala de Rayos y tecnología de punta en estética médica.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS PRINCIPALES -->
+  <section class="services-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Nuestros servicios</span>
+        <h2 class="section-title">Especialidades y tratamientos</h2>
+        <p class="section-subtitle">Más de 17 especialidades médicas, actividad física y estética para el cuidado integral de tu salud.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">🦴</div>
+          <h3>Kinesiología & Quiropraxia</h3>
+          <p>Nuestro núcleo desde 1985. Rehabilitación, tratamiento postural, osteopatía y quiropraxia con el más alto nivel de especialización.</p>
+          <a href="servicios.html" class="service-link">Ver más →</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🩺</div>
+          <h3>Medicina & Especialidades</h3>
+          <p>Cardiología, Clínica Médica, Neurología, Endocrinología, Medicina Familiar, Reumatología, Traumatología, Urología y más.</p>
+          <a href="servicios.html" class="service-link">Ver más →</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">✨</div>
+          <h3>Estética Médica</h3>
+          <p>Cirugía Plástica y Estética Médica a cargo de profesionales especializados para realzar tu imagen y bienestar.</p>
+          <a href="servicios.html" class="service-link">Ver más →</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🏋️</div>
+          <h3>Fitness & Pilates</h3>
+          <p>Entrenamiento integral y de la fuerza, sala de Pilates con supervisión profesional para un acondicionamiento completo.</p>
+          <a href="servicios.html" class="service-link">Ver más →</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🧠</div>
+          <h3>Nutrición & Psicología</h3>
+          <p>Acompañamiento integral con nutricionistas y psicólogos para un bienestar físico y mental completo y sostenible.</p>
+          <a href="servicios.html" class="service-link">Ver más →</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🔬</div>
+          <h3>Diagnóstico por Imágenes</h3>
+          <p>Ecografías y sala de Rayos con tecnología actualizada para un diagnóstico preciso y oportuno al servicio de tu salud.</p>
+          <a href="servicios.html" class="service-link">Ver más →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NÚMEROS DE CONFIANZA -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div>
+          <div class="stat-num">35</div>
+          <div class="stat-label">Años de experiencia</div>
+        </div>
+        <div>
+          <div class="stat-num">25+</div>
+          <div class="stat-label">Profesionales</div>
+        </div>
+        <div>
+          <div class="stat-num">17+</div>
+          <div class="stat-label">Especialidades</div>
+        </div>
+        <div>
+          <div class="stat-num">4.032</div>
+          <div class="stat-label">Clientes felices</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERÍA -->
+  <section class="gallery-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Nuestras instalaciones</span>
+        <h2 class="section-title">Un espacio para tu bienestar</h2>
+        <p class="section-subtitle">Tres pisos en el corazón de Rosario, equipados con tecnología de última generación.</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="assets/hero-poster.jpg" alt="Centro CEMEK – Edificio principal en Paraguay 1423, Rosario" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="https://centrocemek.com.ar/wp-content/uploads/2022/02/Web-CEMEK2-02-1024x424.jpg" alt="Centro CEMEK – Sala de tratamientos y rehabilitación" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="https://centrocemek.com.ar/wp-content/uploads/2022/02/Web-CEMEK2-03-1024x424.jpg" alt="Centro CEMEK – Equipos médicos de última generación" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="cta-final">
+    <div class="container">
+      <h2>¿Listo para mejorar tu calidad de vida?</h2>
+      <p>Más de 4.000 pacientes ya confían en nosotros. Solicitá tu turno hoy y comenzá tu camino hacia el bienestar integral.</p>
+      <div class="cta-btns">
+        <a href="#" onclick="openModal(event)" class="btn btn-white">Solicitar Turno</a>
+        <a href="https://wa.me/5493413211244" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light">WhatsApp: 341 321-1244</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="assets/logo.png" alt="Centro CEMEK">
+          </div>
+          <p>Centro Médico, Kinésico y Estético. Un espacio integral en el corazón de Rosario, al servicio de tu salud desde 1985.</p>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/centrocemek/?hl=es" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Centro CEMEK">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contacto</h4>
+          <ul>
+            <li>📍 Paraguay 1423, Rosario</li>
+            <li>📞 <a href="tel:4409256">4409256 / 4470734 / 4421423</a></li>
+            <li>💬 <a href="https://wa.me/5493413211244">WhatsApp 341 321-1244</a></li>
+            <li><a href="https://www.instagram.com/centrocemek/?hl=es" target="_blank" rel="noopener noreferrer">@centrocemek</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 Centro CEMEK – Medicina · Estética · Fitness. Todos los derechos reservados.</p>
+        <ul class="footer-nav">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="#" onclick="openModal(event)">Sacar Turno</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL TURNOS -->
+  <div class="modal-overlay" id="booking-modal" role="dialog" aria-modal="true" aria-label="Reservar turno">
+    <div class="modal-box" id="modal-box">
+      <div class="modal-header">
+        <div class="modal-header-left">
+          <span>📅</span>
+          <div>
+            <h3>Reservar turno en Centro CEMEK</h3>
+            <p>Seleccioná el día y horario que mejor te quede</p>
+          </div>
+        </div>
+        <button class="modal-close" id="modal-close" aria-label="Cerrar">✕</button>
+      </div>
+      <div class="modal-body">
+        <div id="cal-booking-placeholder"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CAL.COM EMBED -->
+  <script type="text/javascript">
+    (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["-queue", namespace]);} else {p(cal, ar);} return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+    Cal("init", {origin:"https://cal.com"});
+    Cal("inline", {
+      elementOrSelector: "#cal-booking-placeholder",
+      calLink: "francis-seval-l9dl7u/turnos-cemek",
+      layout: "month_view"
+    });
+  </script>
+
+  <script>
+    // Mobile nav
+    const toggle = document.getElementById('mobile-toggle');
+    const nav = document.getElementById('main-nav');
+    toggle.addEventListener('click', () => nav.classList.toggle('open'));
+
+    // Header scroll
+    window.addEventListener('scroll', () => {
+      document.getElementById('site-header').style.background =
+        window.scrollY > 60 ? 'rgba(7,0,58,0.98)' : 'rgba(7,0,58,0.94)';
+    });
+
+    // Modal
+    const modal = document.getElementById('booking-modal');
+    const modalBox = document.getElementById('modal-box');
+
+    function openModal(e) {
+      if (e) e.preventDefault();
+      modal.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      modal.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    document.getElementById('modal-close').addEventListener('click', closeModal);
+
+    modal.addEventListener('click', function(e) {
+      if (!modalBox.contains(e.target)) closeModal();
+    });
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeModal();
+    });
+  </script>
+</body>
+</html>
