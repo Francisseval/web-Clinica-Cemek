@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Profesionales & Turnos Online | Centro CEMEK – Rosario</title>
+  <title>Profesionales | Centro CEMEK – Rosario</title>
   <link rel="icon" href="assets/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- SEO Meta Tags -->
-  <meta name="description" content="Conocé el equipo de +30 profesionales de Centro CEMEK en Rosario y sacá tu turno online. Kinesiología, Ginecología, Traumatología, Neurología, Nutrición, Psicología y más especialidades.">
+  <meta name="description" content="Conocé el equipo de +27 profesionales de Centro CEMEK en Rosario. Kinesiología, Ginecología, Traumatología, Neurología, Nutrición, Psicología y más especialidades.">
   <meta name="robots" content="index, follow">
   <meta name="author" content="Centro CEMEK">
   <link rel="canonical" href="https://centrocemek.com.ar/profesionales.html">
@@ -25,8 +25,8 @@
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://centrocemek.com.ar/profesionales.html">
-  <meta property="og:title" content="Profesionales & Turnos Online | Centro CEMEK – Rosario">
-  <meta property="og:description" content="+30 profesionales en Kinesiología, Ginecología, Traumatología, Neurología y más. Sacá tu turno online en Centro CEMEK, Rosario.">
+  <meta property="og:title" content="Profesionales | Centro CEMEK – Rosario">
+  <meta property="og:description" content="+27 profesionales en Kinesiología, Ginecología, Traumatología, Neurología y más en Centro CEMEK, Rosario.">
   <meta property="og:image" content="https://centrocemek.com.ar/assets/hero-poster.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -35,12 +35,11 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Profesionales & Turnos Online | Centro CEMEK – Rosario">
-  <meta name="twitter:description" content="+30 profesionales en Centro CEMEK, Rosario. Sacá tu turno online.">
+  <meta name="twitter:title" content="Profesionales | Centro CEMEK – Rosario">
+  <meta name="twitter:description" content="+27 profesionales en Centro CEMEK, Rosario. Medicina, kinesiología, estética y más.">
   <meta name="twitter:image" content="https://centrocemek.com.ar/assets/hero-poster.jpg">
 
   <!-- Performance -->
-  <link rel="dns-prefetch" href="https://app.cal.com">
   <link rel="dns-prefetch" href="https://wa.me">
 
   <!-- Structured Data -->
@@ -48,9 +47,9 @@
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Profesionales & Turnos Online – Centro CEMEK",
+    "name": "Profesionales – Centro CEMEK",
     "url": "https://centrocemek.com.ar/profesionales.html",
-    "description": "+30 profesionales de Centro CEMEK con turno online disponible en Rosario.",
+    "description": "+27 profesionales de Centro CEMEK en Rosario. Medicina, kinesiología, estética y fitness.",
     "isPartOf": { "@type": "MedicalOrganization", "name": "Centro CEMEK", "url": "https://centrocemek.com.ar" },
     "breadcrumb": {
       "@type": "BreadcrumbList",
@@ -157,19 +156,6 @@
     .footer-nav a:hover { color: var(--light); }
 
     /* MODAL */
-    .modal-overlay { display: none; position: fixed; inset: 0; z-index: 2000; background: rgba(7,0,58,0.72); backdrop-filter: blur(4px); align-items: center; justify-content: center; padding: 20px; }
-    .modal-overlay.open { display: flex; }
-    .modal-box { background: white; border-radius: 16px; width: 100%; max-width: 920px; max-height: 90vh; overflow-y: auto; position: relative; box-shadow: 0 24px 80px rgba(7,0,58,0.45); display: flex; flex-direction: column; }
-    .modal-header { display: flex; align-items: center; justify-content: space-between; padding: 20px 24px; border-bottom: 1px solid #edf2f7; position: sticky; top: 0; background: white; z-index: 10; }
-    .modal-header-left { display: flex; align-items: center; gap: 14px; }
-    .modal-pro-avatar { width: 46px; height: 46px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 0.9rem; color: white; letter-spacing: 0.5px; flex-shrink: 0; }
-    .modal-header h3 { font-size: 1.05rem; font-weight: 700; color: var(--dark); }
-    .modal-header p { font-size: 0.82rem; color: var(--muted); margin-top: 2px; }
-    .modal-close { width: 36px; height: 36px; background: var(--light-bg); border: none; border-radius: 8px; cursor: pointer; font-size: 1rem; color: var(--text); display: flex; align-items: center; justify-content: center; transition: var(--transition); flex-shrink: 0; }
-    .modal-close:hover { background: #e2e8f0; color: var(--primary); }
-    .modal-body { flex: 1; min-height: 640px; }
-    #cal-booking-placeholder { width: 100%; min-height: 640px; }
-
     /* RESPONSIVE */
     @media (max-width: 900px) {
       .footer-grid { grid-template-columns: 1fr 1fr; }
@@ -185,9 +171,6 @@
       .professionals-grid { grid-template-columns: repeat(2, 1fr); }
       .footer-grid { grid-template-columns: 1fr; gap: 30px; }
       .footer-bottom { flex-direction: column; text-align: center; }
-      .modal-overlay { padding: 10px; }
-      .modal-box { max-width: 95vw; max-height: 95vh; border-radius: 12px; }
-      #cal-booking-placeholder { min-height: 580px; }
     }
     @media (max-width: 480px) {
       .professionals-grid { grid-template-columns: 1fr; }
@@ -213,7 +196,7 @@
         </ul>
       </nav>
       <div class="header-cta">
-        <a href="#" onclick="openProModal('Centro CEMEK','Seleccioná tu profesional','CE','#264873')">
+        <a href="https://wa.me/5493413211244" target="_blank" rel="noopener noreferrer">
           <svg width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
           Sacar Turno
         </a>
@@ -228,8 +211,8 @@
   <div class="page-hero">
     <div class="container">
       <span class="eyebrow">Centro CEMEK · Rosario</span>
-      <h1>Profesionales &amp; Turnos Online</h1>
-      <p>Más de 30 especialistas comprometidos con tu salud y bienestar. Seleccioná al profesional y sacá tu turno en segundos.</p>
+      <h1>Profesionales</h1>
+      <p>Más de 30 especialistas comprometidos con tu salud y bienestar. Consultá por WhatsApp o teléfono para coordinar tu turno.</p>
       <div class="hero-stats">
         <div>
           <div class="hero-stat-num">+30</div>
@@ -255,13 +238,12 @@
         <button class="filter-btn" data-filter="kinesiologia">Kinesiología</button>
         <button class="filter-btn" data-filter="ginecologia">Ginecología</button>
         <button class="filter-btn" data-filter="traumatologia">Traumatología</button>
-        <button class="filter-btn" data-filter="neurologia">Neurología</button>
+        <button class="filter-btn" data-filter="dolor">Medicina del Dolor</button>
         <button class="filter-btn" data-filter="nutricion">Nutrición</button>
-        <button class="filter-btn" data-filter="psicologia">Psicología</button>
-        <button class="filter-btn" data-filter="medicina">Medicina</button>
-        <button class="filter-btn" data-filter="fitness">Fitness</button>
         <button class="filter-btn" data-filter="estetica">Estética</button>
-        <button class="filter-btn" data-filter="terapias">Terapias</button>
+        <button class="filter-btn" data-filter="podologia">Podología</button>
+        <button class="filter-btn" data-filter="masajes">Masajes</button>
+        <button class="filter-btn" data-filter="actividades">Actividades</button>
       </div>
     </div>
   </div>
@@ -271,361 +253,233 @@
     <div class="container">
       <div class="pros-header">
         <span class="pros-title">Nuestro equipo</span>
-        <span class="pros-count" id="pros-count">31 profesionales</span>
+        <span class="pros-count" id="pros-count">27 profesionales</span>
       </div>
       <div class="professionals-grid" id="professionals-grid">
-
-        <!-- KINESIOLOGÍA -->
-        <div class="pro-card" data-category="kinesiologia" style="--card-color:#264873" onclick="openProModal('Dr. Vergara Pedro','Kinesiología · Osteopatía','VP','#264873')">
-          <div class="pro-avatar">VP</div>
-          <span class="pro-badge">Kinesiología</span>
-          <div class="pro-name">Dr. Vergara Pedro</div>
-          <div class="pro-specialty">Kinesiología · Osteopatía</div>
-          <button class="pro-btn" type="button">
-            <svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-            Sacar Turno
-          </button>
-        </div>
-
-        <div class="pro-card" data-category="kinesiologia" style="--card-color:#264873" onclick="openProModal('Dr. Gallo Federico','Kinesiología · Osteopatía','GF','#264873')">
-          <div class="pro-avatar">GF</div>
-          <span class="pro-badge">Kinesiología</span>
-          <div class="pro-name">Dr. Gallo Federico</div>
-          <div class="pro-specialty">Kinesiología · Osteopatía</div>
-          <button class="pro-btn" type="button">
-            <svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-            Sacar Turno
-          </button>
-        </div>
-
-        <div class="pro-card" data-category="kinesiologia" style="--card-color:#264873" onclick="openProModal('Dr. Cantagallo Leandro','Kinesiología · Osteopatía','CL','#264873')">
-          <div class="pro-avatar">CL</div>
-          <span class="pro-badge">Kinesiología</span>
-          <div class="pro-name">Dr. Cantagallo Leandro</div>
-          <div class="pro-specialty">Kinesiología · Osteopatía</div>
-          <button class="pro-btn" type="button">
-            <svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-            Sacar Turno
-          </button>
-        </div>
-
-        <div class="pro-card" data-category="kinesiologia" style="--card-color:#264873" onclick="openProModal('Lic. Sabella Jonatan','Kinesiología','SJ','#264873')">
-          <div class="pro-avatar">SJ</div>
-          <span class="pro-badge">Kinesiología</span>
-          <div class="pro-name">Lic. Sabella Jonatan</div>
-          <div class="pro-specialty">Kinesiología</div>
-          <button class="pro-btn" type="button">
-            <svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-            Sacar Turno
-          </button>
-        </div>
-
-        <div class="pro-card" data-category="kinesiologia" style="--card-color:#264873" onclick="openProModal('Dr. Carrizo Ramiro','Kinesiología · RPG','CR','#264873')">
-          <div class="pro-avatar">CR</div>
-          <span class="pro-badge">Kinesiología</span>
-          <div class="pro-name">Dr. Carrizo Ramiro</div>
-          <div class="pro-specialty">Kinesiología · RPG</div>
-          <button class="pro-btn" type="button">
-            <svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-            Sacar Turno
-          </button>
-        </div>
-
-        <div class="pro-card" data-category="kinesiologia" style="--card-color:#264873" onclick="openProModal('Dr. Mendoza Mauricio','Kinesiología · Quiropraxia','MM','#264873')">
-          <div class="pro-avatar">MM</div>
-          <span class="pro-badge">Kinesiología</span>
-          <div class="pro-name">Dr. Mendoza Mauricio</div>
-          <div class="pro-specialty">Kinesiología · Quiropraxia</div>
-          <button class="pro-btn" type="button">
-            <svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-            Sacar Turno
-          </button>
-        </div>
-
-        <div class="pro-card" data-category="kinesiologia" style="--card-color:#264873" onclick="openProModal('Lic. Stodola Emiliana','Kinesiología · CPG · Drenaje Linfático','SE','#264873')">
-          <div class="pro-avatar">SE</div>
-          <span class="pro-badge">Kinesiología</span>
-          <div class="pro-name">Lic. Stodola Emiliana</div>
-          <div class="pro-specialty">Kinesiología · CPG · Drenaje Linfático</div>
-          <button class="pro-btn" type="button">
-            <svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-            Sacar Turno
-          </button>
-        </div>
-
-        <!-- GINECOLOGÍA -->
-        <div class="pro-card" data-category="ginecologia" style="--card-color:#7c3aed" onclick="openProModal('Dra. Affranchino Florencia','Tocoginecología y Obstetricia','AF','#7c3aed')">
-          <div class="pro-avatar">AF</div>
-          <span class="pro-badge">Ginecología</span>
-          <div class="pro-name">Dra. Affranchino Florencia</div>
-          <div class="pro-specialty">Tocoginecología y Obstetricia</div>
-          <button class="pro-btn" type="button">
-            <svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-            Sacar Turno
-          </button>
-        </div>
-
-        <div class="pro-card" data-category="ginecologia" style="--card-color:#7c3aed" onclick="openProModal('Dra. Lucarini Noelia','Tocoginecología','LN','#7c3aed')">
-          <div class="pro-avatar">LN</div>
-          <span class="pro-badge">Ginecología</span>
-          <div class="pro-name">Dra. Lucarini Noelia</div>
-          <div class="pro-specialty">Tocoginecología</div>
-          <button class="pro-btn" type="button">
-            <svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-            Sacar Turno
-          </button>
-        </div>
-
-        <div class="pro-card" data-category="ginecologia" style="--card-color:#7c3aed" onclick="openProModal('Dra. Terrazzino Gisella','Tocoginecología','TG','#7c3aed')">
-          <div class="pro-avatar">TG</div>
-          <span class="pro-badge">Ginecología</span>
-          <div class="pro-name">Dra. Terrazzino Gisella</div>
-          <div class="pro-specialty">Tocoginecología</div>
-          <button class="pro-btn" type="button">
-            <svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-            Sacar Turno
-          </button>
-        </div>
-
-        <div class="pro-card" data-category="ginecologia" style="--card-color:#7c3aed" onclick="openProModal('Dra. Yamila Garfagnoli','Tocoginecología','GY','#7c3aed')">
-          <div class="pro-avatar">GY</div>
-          <span class="pro-badge">Ginecología</span>
-          <div class="pro-name">Dra. Yamila Garfagnoli</div>
-          <div class="pro-specialty">Tocoginecología</div>
-          <button class="pro-btn" type="button">
-            <svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-            Sacar Turno
-          </button>
-        </div>
-
-        <div class="pro-card" data-category="ginecologia" style="--card-color:#7c3aed" onclick="openProModal('Dra. María Laura Mitre','Ginecología Clínica · Endocrinoginecología','ML','#7c3aed')">
-          <div class="pro-avatar">ML</div>
-          <span class="pro-badge">Ginecología</span>
-          <div class="pro-name">Dra. María Laura Mitre</div>
-          <div class="pro-specialty">Ginecología Clínica · Endocrinoginecología</div>
-          <button class="pro-btn" type="button">
-            <svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-            Sacar Turno
-          </button>
-        </div>
-
-        <div class="pro-card" data-category="ginecologia" style="--card-color:#7c3aed" onclick="openProModal('Dra. Yanina Alanis','Ginecología Clínica','AY','#7c3aed')">
-          <div class="pro-avatar">AY</div>
-          <span class="pro-badge">Ginecología</span>
-          <div class="pro-name">Dra. Yanina Alanis</div>
-          <div class="pro-specialty">Ginecología Clínica</div>
-          <button class="pro-btn" type="button">
-            <svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-            Sacar Turno
-          </button>
-        </div>
-
-        <div class="pro-card" data-category="ginecologia" style="--card-color:#7c3aed" onclick="openProModal('Dra. Natalia Massetto','Ginecología','MN','#7c3aed')">
-          <div class="pro-avatar">MN</div>
-          <span class="pro-badge">Ginecología</span>
-          <div class="pro-name">Dra. Natalia Massetto</div>
-          <div class="pro-specialty">Ginecología</div>
-          <button class="pro-btn" type="button">
-            <svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-            Sacar Turno
-          </button>
-        </div>
-
         <!-- TRAUMATOLOGÍA -->
-        <div class="pro-card" data-category="traumatologia" style="--card-color:#c53030" onclick="openProModal('Dr. Calabuig Martín','Traumatología','CM','#c53030')">
-          <div class="pro-avatar">CM</div>
-          <span class="pro-badge">Traumatología</span>
-          <div class="pro-name">Dr. Calabuig Martín</div>
-          <div class="pro-specialty">Traumatología</div>
-          <button class="pro-btn" type="button">
-            <svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-            Sacar Turno
-          </button>
-        </div>
-
-        <div class="pro-card" data-category="traumatologia" style="--card-color:#c53030" onclick="openProModal('Dr. Maurino Guillermo','Traumatología','MG','#c53030')">
-          <div class="pro-avatar">MG</div>
-          <span class="pro-badge">Traumatología</span>
-          <div class="pro-name">Dr. Maurino Guillermo</div>
-          <div class="pro-specialty">Traumatología</div>
-          <button class="pro-btn" type="button">
-            <svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-            Sacar Turno
-          </button>
-        </div>
-
-        <div class="pro-card" data-category="traumatologia" style="--card-color:#c53030" onclick="openProModal('Dr. Zordan Jesuan','Traumatología','ZJ','#c53030')">
+        <div class="pro-card" data-category="traumatologia" style="--card-color:#c53030">
           <div class="pro-avatar">ZJ</div>
           <span class="pro-badge">Traumatología</span>
           <div class="pro-name">Dr. Zordan Jesuan</div>
-          <div class="pro-specialty">Traumatología</div>
-          <button class="pro-btn" type="button">
-            <svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-            Sacar Turno
-          </button>
+          <div class="pro-specialty">Traumatólogo · Cirujano Artroscopista</div>
+          <a href="https://wa.me/5493413211244" target="_blank" rel="noopener noreferrer" class="pro-btn"><svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg> Sacar Turno</a>
         </div>
 
-        <!-- NEUROLOGÍA -->
-        <div class="pro-card" data-category="neurologia" style="--card-color:#d97706" onclick="openProModal('Dr. Figallo Guillermo Darío','Neurocirujano · Neurólogo','FG','#d97706')">
-          <div class="pro-avatar">FG</div>
-          <span class="pro-badge">Neurología</span>
-          <div class="pro-name">Dr. Figallo Guillermo Darío</div>
-          <div class="pro-specialty">Neurocirujano · Neurólogo</div>
-          <button class="pro-btn" type="button">
-            <svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-            Sacar Turno
-          </button>
-        </div>
-
-        <div class="pro-card" data-category="neurologia" style="--card-color:#d97706" onclick="openProModal('Dr. Vincenti José María','Neurocirujano · Neurólogo','VJ','#d97706')">
-          <div class="pro-avatar">VJ</div>
-          <span class="pro-badge">Neurología</span>
-          <div class="pro-name">Dr. Vincenti José María</div>
-          <div class="pro-specialty">Neurocirujano · Neurólogo</div>
-          <button class="pro-btn" type="button">
-            <svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-            Sacar Turno
-          </button>
-        </div>
-
-        <!-- NUTRICIÓN -->
-        <div class="pro-card" data-category="nutricion" style="--card-color:#059669" onclick="openProModal('Lic. Ciccarelli Danila','Nutrición','CD','#059669')">
+        <!-- MEDICINA DEL DOLOR -->
+        <div class="pro-card" data-category="dolor" style="--card-color:#d97706">
           <div class="pro-avatar">CD</div>
-          <span class="pro-badge">Nutrición</span>
-          <div class="pro-name">Lic. Ciccarelli Danila</div>
-          <div class="pro-specialty">Nutrición</div>
-          <button class="pro-btn" type="button">
-            <svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-            Sacar Turno
-          </button>
-        </div>
-
-        <div class="pro-card" data-category="nutricion" style="--card-color:#059669" onclick="openProModal('Lic. Laura Redruello','Nutrición','RL','#059669')">
-          <div class="pro-avatar">RL</div>
-          <span class="pro-badge">Nutrición</span>
-          <div class="pro-name">Lic. Laura Redruello</div>
-          <div class="pro-specialty">Nutrición</div>
-          <button class="pro-btn" type="button">
-            <svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-            Sacar Turno
-          </button>
-        </div>
-
-        <!-- PSICOLOGÍA -->
-        <div class="pro-card" data-category="psicologia" style="--card-color:#6366f1" onclick="openProModal('Lic. Nannini Marilina','Psicología · Pilates Terapéutico','NM','#6366f1')">
-          <div class="pro-avatar">NM</div>
-          <span class="pro-badge">Psicología</span>
-          <div class="pro-name">Lic. Nannini Marilina</div>
-          <div class="pro-specialty">Psicología · Pilates Terapéutico</div>
-          <button class="pro-btn" type="button">
-            <svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-            Sacar Turno
-          </button>
-        </div>
-
-        <div class="pro-card" data-category="psicologia" style="--card-color:#6366f1" onclick="openProModal('Lic. Santiago López Papucci','Psicología Deportiva','LS','#6366f1')">
-          <div class="pro-avatar">LS</div>
-          <span class="pro-badge">Psicología</span>
-          <div class="pro-name">Lic. Santiago López Papucci</div>
-          <div class="pro-specialty">Psicología Deportiva</div>
-          <button class="pro-btn" type="button">
-            <svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-            Sacar Turno
-          </button>
-        </div>
-
-        <!-- MEDICINA -->
-        <div class="pro-card" data-category="medicina" style="--card-color:#0369a1" onclick="openProModal('Dra. Rodriguez Soledad','Cardiología','RS','#0369a1')">
-          <div class="pro-avatar">RS</div>
-          <span class="pro-badge">Medicina</span>
-          <div class="pro-name">Dra. Rodriguez Soledad</div>
-          <div class="pro-specialty">Cardiología</div>
-          <button class="pro-btn" type="button">
-            <svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-            Sacar Turno
-          </button>
-        </div>
-
-        <div class="pro-card" data-category="medicina" style="--card-color:#0369a1" onclick="openProModal('Dr. Groppo Carlos','Medicina del Deporte · Fisiología · Nutrición Deportiva','GC','#0369a1')">
-          <div class="pro-avatar">GC</div>
-          <span class="pro-badge">Medicina</span>
-          <div class="pro-name">Dr. Groppo Carlos</div>
-          <div class="pro-specialty">Medicina del Deporte · Fisiología · Nutrición Deportiva</div>
-          <button class="pro-btn" type="button">
-            <svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-            Sacar Turno
-          </button>
-        </div>
-
-        <div class="pro-card" data-category="medicina" style="--card-color:#0369a1" onclick="openProModal('Dr. César Dip','Medicina del Dolor','DC','#0369a1')">
-          <div class="pro-avatar">DC</div>
-          <span class="pro-badge">Medicina</span>
+          <span class="pro-badge">Medicina del Dolor</span>
           <div class="pro-name">Dr. César Dip</div>
-          <div class="pro-specialty">Medicina del Dolor</div>
-          <button class="pro-btn" type="button">
-            <svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-            Sacar Turno
-          </button>
+          <div class="pro-specialty">Médico General · Medicina del Dolor</div>
+          <a href="https://wa.me/5493413211244" target="_blank" rel="noopener noreferrer" class="pro-btn"><svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg> Sacar Turno</a>
         </div>
 
-        <div class="pro-card" data-category="medicina" style="--card-color:#0369a1" onclick="openProModal('Dr. Eugenio Gordon','Deportología · Nutrición Deportiva','GE','#0369a1')">
-          <div class="pro-avatar">GE</div>
-          <span class="pro-badge">Medicina</span>
+        <div class="pro-card" data-category="dolor" style="--card-color:#d97706">
+          <div class="pro-avatar">JF</div>
+          <span class="pro-badge">Medicina del Dolor</span>
+          <div class="pro-name">Dr. Javier Frutos</div>
+          <div class="pro-specialty">Neurocirujano · Medicina del Dolor · Ozonoterapia</div>
+          <a href="https://wa.me/5493413211244" target="_blank" rel="noopener noreferrer" class="pro-btn"><svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg> Sacar Turno</a>
+        </div>
+
+        <!-- KINESIOLOGÍA Y OSTEOPATÍA -->
+        <div class="pro-card" data-category="kinesiologia" style="--card-color:#264873">
+          <div class="pro-avatar">FG</div>
+          <span class="pro-badge">Kinesiología</span>
+          <div class="pro-name">Lic. Federico Gallo</div>
+          <div class="pro-specialty">Osteópata</div>
+          <a href="https://wa.me/5493413211244" target="_blank" rel="noopener noreferrer" class="pro-btn"><svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg> Sacar Turno</a>
+        </div>
+
+        <div class="pro-card" data-category="kinesiologia" style="--card-color:#264873">
+          <div class="pro-avatar">LC</div>
+          <span class="pro-badge">Kinesiología</span>
+          <div class="pro-name">Lic. Leandro Cantagallo</div>
+          <div class="pro-specialty">Osteópata</div>
+          <a href="https://wa.me/5493413211244" target="_blank" rel="noopener noreferrer" class="pro-btn"><svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg> Sacar Turno</a>
+        </div>
+
+        <div class="pro-card" data-category="kinesiologia" style="--card-color:#264873">
+          <div class="pro-avatar">PV</div>
+          <span class="pro-badge">Kinesiología</span>
+          <div class="pro-name">Lic. Pedro Vergara</div>
+          <div class="pro-specialty">Osteópata · Quiropráctico · Acupuntura</div>
+          <a href="https://wa.me/5493413211244" target="_blank" rel="noopener noreferrer" class="pro-btn"><svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg> Sacar Turno</a>
+        </div>
+
+        <div class="pro-card" data-category="kinesiologia" style="--card-color:#264873">
+          <div class="pro-avatar">NG</div>
+          <span class="pro-badge">Kinesiología</span>
+          <div class="pro-name">Lic. Natalia Gallo</div>
+          <div class="pro-specialty">Kinesióloga · Osteópata Pediátrica · Neurodesarrollo</div>
+          <a href="https://wa.me/5493413211244" target="_blank" rel="noopener noreferrer" class="pro-btn"><svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg> Sacar Turno</a>
+        </div>
+
+        <div class="pro-card" data-category="kinesiologia" style="--card-color:#264873">
+          <div class="pro-avatar">GP</div>
+          <span class="pro-badge">Kinesiología</span>
+          <div class="pro-name">Lic. Georgina Pierabella</div>
+          <div class="pro-specialty">Kinesióloga · Suelo Pélvico</div>
+          <a href="https://wa.me/5493413211244" target="_blank" rel="noopener noreferrer" class="pro-btn"><svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg> Sacar Turno</a>
+        </div>
+
+        <div class="pro-card" data-category="kinesiologia" style="--card-color:#264873">
+          <div class="pro-avatar">SJ</div>
+          <span class="pro-badge">Kinesiología</span>
+          <div class="pro-name">Lic. Sabella Jonatan</div>
+          <div class="pro-specialty">Kinesiólogo · ATM · MEP</div>
+          <a href="https://wa.me/5493413211244" target="_blank" rel="noopener noreferrer" class="pro-btn"><svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg> Sacar Turno</a>
+        </div>
+
+        <div class="pro-card" data-category="kinesiologia" style="--card-color:#264873">
+          <div class="pro-avatar">CR</div>
+          <span class="pro-badge">Kinesiología</span>
+          <div class="pro-name">Lic. Carrizo Ramiro</div>
+          <div class="pro-specialty">Kinesiólogo · RPG</div>
+          <a href="https://wa.me/5493413211244" target="_blank" rel="noopener noreferrer" class="pro-btn"><svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg> Sacar Turno</a>
+        </div>
+
+        <!-- NUTRICIÃ“N Y DEPORTOLOGÍA -->
+        <div class="pro-card" data-category="nutricion" style="--card-color:#059669">
+          <div class="pro-avatar">EG</div>
+          <span class="pro-badge">Nutrición</span>
           <div class="pro-name">Dr. Eugenio Gordon</div>
-          <div class="pro-specialty">Deportología · Nutrición Deportiva</div>
-          <button class="pro-btn" type="button">
-            <svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-            Sacar Turno
-          </button>
+          <div class="pro-specialty">Médico Deportólogo · Nutricionista</div>
+          <a href="https://wa.me/5493413211244" target="_blank" rel="noopener noreferrer" class="pro-btn"><svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg> Sacar Turno</a>
         </div>
 
-        <!-- FITNESS -->
-        <div class="pro-card" data-category="fitness" style="--card-color:#0d9488" onclick="openProModal('Prof. Karina Flores','Entrenamiento Integral y de la Fuerza','FK','#0d9488')">
-          <div class="pro-avatar">FK</div>
-          <span class="pro-badge">Fitness</span>
-          <div class="pro-name">Prof. Karina Flores</div>
-          <div class="pro-specialty">Entrenamiento Integral y de la Fuerza</div>
-          <button class="pro-btn" type="button">
-            <svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-            Sacar Turno
-          </button>
+        <div class="pro-card" data-category="nutricion" style="--card-color:#059669">
+          <div class="pro-avatar">DC</div>
+          <span class="pro-badge">Nutrición</span>
+          <div class="pro-name">Lic. Danila Ciccarelli</div>
+          <div class="pro-specialty">Nutricionista Deportiva</div>
+          <a href="https://wa.me/5493413211244" target="_blank" rel="noopener noreferrer" class="pro-btn"><svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg> Sacar Turno</a>
         </div>
 
-        <!-- ESTÉTICA -->
-        <div class="pro-card" data-category="estetica" style="--card-color:#db2777" onclick="openProModal('Dra. Analia Manavella','Médica Esteticista','MA','#db2777')">
-          <div class="pro-avatar">MA</div>
+        <div class="pro-card" data-category="nutricion" style="--card-color:#059669">
+          <div class="pro-avatar">CG</div>
+          <span class="pro-badge">Nutrición</span>
+          <div class="pro-name">Dr. Carlos Groppo</div>
+          <div class="pro-specialty">Medicina del Deporte</div>
+          <a href="https://wa.me/5493413211244" target="_blank" rel="noopener noreferrer" class="pro-btn"><svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg> Sacar Turno</a>
+        </div>
+
+        <!-- DERMATOLOGÍA Y ESTÃ‰TICA -->
+        <div class="pro-card" data-category="estetica" style="--card-color:#db2777">
+          <div class="pro-avatar">CA</div>
           <span class="pro-badge">Estética</span>
-          <div class="pro-name">Dra. Analia Manavella</div>
-          <div class="pro-specialty">Médica Esteticista</div>
-          <button class="pro-btn" type="button">
-            <svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-            Sacar Turno
-          </button>
+          <div class="pro-name">Dra. Carolina Albinoli</div>
+          <div class="pro-specialty">Dermatología Clínica y Estética</div>
+          <a href="https://wa.me/5493413211244" target="_blank" rel="noopener noreferrer" class="pro-btn"><svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg> Sacar Turno</a>
         </div>
 
-        <!-- TERAPIAS -->
-        <div class="pro-card" data-category="terapias" style="--card-color:#92400e" onclick="openProModal('Dra. Guerra Viviana','Reflexología','GV','#92400e')">
-          <div class="pro-avatar">GV</div>
-          <span class="pro-badge">Terapias</span>
-          <div class="pro-name">Dra. Guerra Viviana</div>
-          <div class="pro-specialty">Reflexología</div>
-          <button class="pro-btn" type="button">
-            <svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-            Sacar Turno
-          </button>
+        <div class="pro-card" data-category="estetica" style="--card-color:#db2777">
+          <div class="pro-avatar">VI</div>
+          <span class="pro-badge">Estética</span>
+          <div class="pro-name">Dra. Valeria Izaguirre</div>
+          <div class="pro-specialty">Medicina Estética</div>
+          <a href="https://wa.me/5493413211244" target="_blank" rel="noopener noreferrer" class="pro-btn"><svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg> Sacar Turno</a>
         </div>
 
-        <div class="pro-card" data-category="terapias" style="--card-color:#92400e" onclick="openProModal('Lic. Rodriguez Daniel','Masajes Terapéuticos','RD','#92400e')">
-          <div class="pro-avatar">RD</div>
-          <span class="pro-badge">Terapias</span>
-          <div class="pro-name">Lic. Rodriguez Daniel</div>
-          <div class="pro-specialty">Masajes Terapéuticos</div>
-          <button class="pro-btn" type="button">
-            <svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-            Sacar Turno
-          </button>
+        <!-- GINECOLOGÍA -->
+        <div class="pro-card" data-category="ginecologia" style="--card-color:#7c3aed">
+          <div class="pro-avatar">YG</div>
+          <span class="pro-badge">Ginecología</span>
+          <div class="pro-name">Dra. Yamila Garfagnoli</div>
+          <div class="pro-specialty">Ginecóloga y Obstetra</div>
+          <a href="https://wa.me/5493413211244" target="_blank" rel="noopener noreferrer" class="pro-btn"><svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg> Sacar Turno</a>
         </div>
 
+        <div class="pro-card" data-category="ginecologia" style="--card-color:#7c3aed">
+          <div class="pro-avatar">AU</div>
+          <span class="pro-badge">Ginecología</span>
+          <div class="pro-name">Dra. Ángeles Ucello</div>
+          <div class="pro-specialty">Ginecóloga</div>
+          <a href="https://wa.me/5493413211244" target="_blank" rel="noopener noreferrer" class="pro-btn"><svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg> Sacar Turno</a>
+        </div>
+
+        <div class="pro-card" data-category="ginecologia" style="--card-color:#7c3aed">
+          <div class="pro-avatar">AF</div>
+          <span class="pro-badge">Ginecología</span>
+          <div class="pro-name">Dra. Florencia Affranchino</div>
+          <div class="pro-specialty">Ginecóloga y Obstetra</div>
+          <a href="https://wa.me/5493413211244" target="_blank" rel="noopener noreferrer" class="pro-btn"><svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg> Sacar Turno</a>
+        </div>
+
+        <div class="pro-card" data-category="ginecologia" style="--card-color:#7c3aed">
+          <div class="pro-avatar">YA</div>
+          <span class="pro-badge">Ginecología</span>
+          <div class="pro-name">Dra. Yanina Alanis</div>
+          <div class="pro-specialty">Ginecóloga · Patología Tracto Genital Inferior</div>
+          <a href="https://wa.me/5493413211244" target="_blank" rel="noopener noreferrer" class="pro-btn"><svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg> Sacar Turno</a>
+        </div>
+
+        <div class="pro-card" data-category="ginecologia" style="--card-color:#7c3aed">
+          <div class="pro-avatar">CM</div>
+          <span class="pro-badge">Ginecología</span>
+          <div class="pro-name">Dr. Martín Calabuig</div>
+          <div class="pro-specialty">Ginecólogo y Obstetra</div>
+          <a href="https://wa.me/5493413211244" target="_blank" rel="noopener noreferrer" class="pro-btn"><svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg> Sacar Turno</a>
+        </div>
+
+        <div class="pro-card" data-category="ginecologia" style="--card-color:#7c3aed">
+          <div class="pro-avatar">FM</div>
+          <span class="pro-badge">Ginecología</span>
+          <div class="pro-name">Dr. Francisco Miretti</div>
+          <div class="pro-specialty">Médico Oncólogo · Nutrición Clínica</div>
+          <a href="https://wa.me/5493413211244" target="_blank" rel="noopener noreferrer" class="pro-btn"><svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg> Sacar Turno</a>
+        </div>
+
+        <!-- PODOLOGÍA -->
+        <div class="pro-card" data-category="podologia" style="--card-color:#0369a1">
+          <div class="pro-avatar">MC</div>
+          <span class="pro-badge">Podología</span>
+          <div class="pro-name">Lic. Cecilia Mangiagli</div>
+          <div class="pro-specialty">Podología · Onicomicosis · Pie Diabético</div>
+          <a href="https://wa.me/5493413211244" target="_blank" rel="noopener noreferrer" class="pro-btn"><svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg> Sacar Turno</a>
+        </div>
+
+        <!-- MASAJES TERAPÃ‰UTICOS -->
+        <div class="pro-card" data-category="masajes" style="--card-color:#92400e">
+          <div class="pro-avatar">DR</div>
+          <span class="pro-badge">Masajes</span>
+          <div class="pro-name">Daniel Rodriguez</div>
+          <div class="pro-specialty">Masajista · Masoterapia · Descontracturantes</div>
+          <a href="https://wa.me/5493413211244" target="_blank" rel="noopener noreferrer" class="pro-btn"><svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg> Sacar Turno</a>
+        </div>
+
+        <!-- ACTIVIDADES -->
+        <div class="pro-card" data-category="actividades" style="--card-color:#0d9488">
+          <div class="pro-avatar">EB</div>
+          <span class="pro-badge">Actividades</span>
+          <div class="pro-name">Evelyn Berneri</div>
+          <div class="pro-specialty">Pilates Reformer · Stretching</div>
+          <a href="https://wa.me/5493413211244" target="_blank" rel="noopener noreferrer" class="pro-btn"><svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg> Sacar Turno</a>
+        </div>
+
+        <div class="pro-card" data-category="actividades" style="--card-color:#0d9488">
+          <div class="pro-avatar">EC</div>
+          <span class="pro-badge">Actividades</span>
+          <div class="pro-name">Entrenamiento CEMEK</div>
+          <div class="pro-specialty">Funcional · Calistenia · Fuerza · Yoga ADM</div>
+          <a href="https://wa.me/5493413211244" target="_blank" rel="noopener noreferrer" class="pro-btn"><svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg> Sacar Turno</a>
+        </div>
+
+        <div class="pro-card" data-category="actividades" style="--card-color:#0d9488">
+          <div class="pro-avatar">GA</div>
+          <span class="pro-badge">Actividades</span>
+          <div class="pro-name">María Gabriela Andrin</div>
+          <div class="pro-specialty">Yoga</div>
+          <a href="https://wa.me/5493413211244" target="_blank" rel="noopener noreferrer" class="pro-btn"><svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg> Sacar Turno</a>
+        </div>
+
+        <div class="pro-card" data-category="actividades" style="--card-color:#0d9488">
+          <div class="pro-avatar">DB</div>
+          <span class="pro-badge">Actividades</span>
+          <div class="pro-name">Daniela Baltar</div>
+          <div class="pro-specialty">Depilación Definitiva</div>
+          <a href="https://wa.me/5493413211244" target="_blank" rel="noopener noreferrer" class="pro-btn"><svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg> Sacar Turno</a>
+        </div>
       </div>
     </div>
   </section>
@@ -636,8 +490,8 @@
       <h2>¿No encontrás tu especialidad?</h2>
       <p>Contactanos y te orientamos con el profesional más adecuado para tu consulta.</p>
       <div class="cta-btns">
-        <a href="#" onclick="openProModal('Centro CEMEK','Seleccioná tu profesional','CE','#264873')" class="btn btn-white">Solicitar Turno</a>
-        <a href="https://wa.me/5493413211244" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light">WhatsApp: 341 321-1244</a>
+        <a href="https://wa.me/5493413211244" target="_blank" rel="noopener noreferrer" class="btn btn-white">Solicitar Turno por WhatsApp</a>
+        <a href="tel:4409256" class="btn btn-outline-light">Llamar: 4409256</a>
       </div>
     </div>
   </section>
@@ -689,36 +543,6 @@
     </div>
   </footer>
 
-  <!-- MODAL TURNOS -->
-  <div class="modal-overlay" id="booking-modal" role="dialog" aria-modal="true" aria-label="Reservar turno">
-    <div class="modal-box" id="modal-box">
-      <div class="modal-header">
-        <div class="modal-header-left">
-          <div class="modal-pro-avatar" id="modal-pro-avatar"></div>
-          <div>
-            <h3 id="modal-pro-name">Reservar turno</h3>
-            <p id="modal-pro-specialty"></p>
-          </div>
-        </div>
-        <button class="modal-close" id="modal-close" aria-label="Cerrar">✕</button>
-      </div>
-      <div class="modal-body">
-        <div id="cal-booking-placeholder"></div>
-      </div>
-    </div>
-  </div>
-
-  <!-- CAL.COM EMBED -->
-  <script type="text/javascript">
-    (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["-queue", namespace]);} else {p(cal, ar);} return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
-    Cal("init", {origin:"https://cal.com"});
-    Cal("inline", {
-      elementOrSelector: "#cal-booking-placeholder",
-      calLink: "francis-seval-l9dl7u/turnos-cemek",
-      layout: "month_view"
-    });
-  </script>
-
   <script>
     // Mobile nav
     const toggle = document.getElementById('mobile-toggle');
@@ -744,29 +568,6 @@
         countEl.textContent = visible + (visible === 1 ? ' profesional' : ' profesionales');
       });
     });
-
-    // Modal
-    const modal = document.getElementById('booking-modal');
-    const modalBox = document.getElementById('modal-box');
-
-    function openProModal(name, specialty, initials, color) {
-      document.getElementById('modal-pro-name').textContent = 'Turno con ' + name;
-      document.getElementById('modal-pro-specialty').textContent = specialty;
-      const avatar = document.getElementById('modal-pro-avatar');
-      avatar.textContent = initials;
-      avatar.style.background = color;
-      modal.classList.add('open');
-      document.body.style.overflow = 'hidden';
-    }
-
-    function closeModal() {
-      modal.classList.remove('open');
-      document.body.style.overflow = '';
-    }
-
-    document.getElementById('modal-close').addEventListener('click', closeModal);
-    modal.addEventListener('click', e => { if (!modalBox.contains(e.target)) closeModal(); });
-    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
   </script>
   <script src="assets/chat-widget.js" defer></script>
 </body>
