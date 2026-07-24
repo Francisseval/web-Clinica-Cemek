@@ -141,6 +141,20 @@
 
     .category-section.alt .service-item { background: white; }
 
+    /* ALQUILER DE CONSULTORIOS */
+    .rent-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; margin-top: 8px; }
+    .rent-card { background: white; border: 1px solid #e2e8f0; border-radius: var(--radius); padding: 30px; display: flex; flex-direction: column; gap: 14px; transition: var(--transition); }
+    .rent-card:hover { border-color: var(--primary); box-shadow: var(--shadow); transform: translateY(-2px); }
+    .rent-card h4 { font-size: 1.15rem; font-weight: 800; color: var(--dark); }
+    .rent-card > p { font-size: 0.88rem; color: var(--muted); line-height: 1.6; }
+    .rent-features { list-style: none; font-size: 0.86rem; color: var(--text); line-height: 1.9; }
+    .rent-features li::before { content: "✓ "; color: var(--primary); font-weight: 700; }
+    .rent-price { font-size: 1.4rem; font-weight: 800; color: var(--primary); margin-top: auto; }
+    .rent-price span { font-size: 0.8rem; font-weight: 600; color: var(--muted); }
+    .rent-btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; background: var(--primary); color: white; padding: 13px 22px; border-radius: 10px; font-weight: 700; font-size: 0.85rem; text-decoration: none; transition: var(--transition); }
+    .rent-btn:hover { background: var(--primary-dark); transform: translateY(-2px); }
+    .rent-requisitos { font-size: 0.85rem; color: var(--muted); margin-top: 28px; text-align: center; }
+
     /* GALLERY ROW */
     .gallery-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 60px; }
     .gallery-row-item { overflow: hidden; border-radius: var(--radius); height: 200px; }
@@ -402,6 +416,53 @@
           </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- ALQUILER DE CONSULTORIOS -->
+  <section class="category-section">
+    <div class="container">
+      <div class="category-header">
+        <div class="category-icon">🏢</div>
+        <div>
+          <h2>Alquiler de Consultorios</h2>
+          <p>Espacios profesionales equipados en Paraguay 1423, Rosario, para el desarrollo de tu práctica particular.</p>
+        </div>
+      </div>
+
+      <img src="assets/gallery/cemek-equipo-profesionales.jpg" alt="Consultorios en alquiler – Centro CEMEK Rosario" loading="lazy" style="width:100%; border-radius:var(--radius); margin-bottom:36px; max-height:280px; object-fit:cover;">
+
+      <div class="rent-grid">
+        <div class="rent-card">
+          <h4>Consultorio Exclusivo</h4>
+          <p>Uso exclusivo de 8:00 a 20:30hs, ideal para médicos, psicólogos, odontólogos y kinesiólogos que buscan un espacio propio y estable.</p>
+          <ul class="rent-features">
+            <li>Camilla estándar</li>
+            <li>Escritorio y 2 sillas</li>
+            <li>Ambiente calefaccionado</li>
+            <li>WiFi</li>
+            <li>Secretaria</li>
+            <li>Baño exclusivo</li>
+          </ul>
+          <div class="rent-price">$1.000.000 <span>/ mes</span></div>
+          <a href="https://wa.me/5493413211187?text=Hola!%20Me%20interesa%20el%20Consultorio%20Exclusivo%20en%20alquiler%20en%20Centro%20CEMEK.%20%C2%BFMe%20pod%C3%A9s%20brindar%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener noreferrer" class="rent-btn">Consultar por WhatsApp</a>
+        </div>
+
+        <div class="rent-card">
+          <h4>Consultorio por Hora</h4>
+          <p>Alquiler por franja horaria, ideal para psicólogos, médicos, kinesiólogos (terapia manual) y nutricionistas.</p>
+          <ul class="rent-features">
+            <li>Camilla estándar</li>
+            <li>Escritorio y 2 sillas</li>
+            <li>Ambiente calefaccionado</li>
+            <li>WiFi</li>
+          </ul>
+          <div class="rent-price">$12.000 <span>/ hora</span></div>
+          <a href="https://wa.me/5493413211187?text=Hola!%20Me%20interesa%20alquilar%20un%20consultorio%20por%20hora%20en%20Centro%20CEMEK.%20%C2%BFMe%20pod%C3%A9s%20brindar%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener noreferrer" class="rent-btn">Consultar por WhatsApp</a>
+        </div>
+      </div>
+
+      <p class="rent-requisitos"><strong>Requisitos:</strong> matrícula habilitante, seguro de mala praxis vigente y título que avale la práctica profesional.</p>
     </div>
   </section>
 
