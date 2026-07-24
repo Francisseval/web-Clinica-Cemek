@@ -244,7 +244,7 @@
             <li>Baño exclusivo</li>
           </ul>
           <div class="rent-price">$1.000.000 <span>/ mes</span></div>
-          <a href="https://wa.me/5493413211187?text=Hola!%20Me%20interesa%20el%20Consultorio%20Exclusivo%20en%20alquiler%20en%20Centro%20CEMEK.%20%C2%BFMe%20pod%C3%A9s%20brindar%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener noreferrer" class="rent-btn">Consultar por WhatsApp</a>
+          <a id="wa-exclusivo" href="gracias.html" class="rent-btn">Consultar por WhatsApp</a>
         </div>
 
         <div class="rent-card">
@@ -257,7 +257,7 @@
             <li>WiFi</li>
           </ul>
           <div class="rent-price">$12.000 <span>/ hora</span></div>
-          <a href="https://wa.me/5493413211187?text=Hola!%20Me%20interesa%20alquilar%20un%20consultorio%20por%20hora%20en%20Centro%20CEMEK.%20%C2%BFMe%20pod%C3%A9s%20brindar%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener noreferrer" class="rent-btn">Consultar por WhatsApp</a>
+          <a id="wa-hora" href="gracias.html" class="rent-btn">Consultar por WhatsApp</a>
         </div>
       </div>
 
@@ -271,7 +271,7 @@
       <h2>¿Te interesa alquilar un consultorio?</h2>
       <p>Escribinos por WhatsApp y coordinamos una visita a Centro CEMEK, Paraguay 1423, Rosario.</p>
       <div class="cta-btns">
-        <a href="https://wa.me/5493413211187?text=Hola!%20Me%20interesa%20alquilar%20un%20consultorio%20en%20Centro%20CEMEK.%20%C2%BFMe%20pod%C3%A9s%20brindar%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener noreferrer" class="btn btn-white">Consultar por WhatsApp</a>
+        <a id="wa-general" href="gracias.html" class="btn btn-white">Consultar por WhatsApp</a>
       </div>
     </div>
   </section>
@@ -323,6 +323,20 @@
     const toggle = document.getElementById('mobile-toggle');
     const nav = document.getElementById('main-nav');
     toggle.addEventListener('click', () => nav.classList.toggle('open'));
+  </script>
+  <script>
+    // Los botones de WhatsApp pasan primero por gracias.html para registrar la conversión de Google Ads
+    var mensajesWa = {
+      'wa-exclusivo': 'Hola! Me interesa el Consultorio Exclusivo en alquiler en Centro CEMEK. ¿Me podés brindar más información?',
+      'wa-hora': 'Hola! Me interesa alquilar un consultorio por hora en Centro CEMEK. ¿Me podés brindar más información?',
+      'wa-general': 'Hola! Me interesa alquilar un consultorio en Centro CEMEK. ¿Me podés brindar más información?'
+    };
+    Object.keys(mensajesWa).forEach(function (id) {
+      var btn = document.getElementById(id);
+      if (!btn) return;
+      var waUrl = 'https://wa.me/5493413211187?text=' + encodeURIComponent(mensajesWa[id]);
+      btn.href = 'gracias.html?wa=' + encodeURIComponent(waUrl);
+    });
   </script>
   <script src="assets/chat-widget.js" defer></script>
 </body>
