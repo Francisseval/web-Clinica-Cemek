@@ -244,7 +244,7 @@
             <li>Baño exclusivo</li>
           </ul>
           <div class="rent-price">$1.000.000 <span>/ mes</span></div>
-          <a id="wa-exclusivo" href="gracias.html" class="rent-btn">Consultar por WhatsApp</a>
+          <a id="wa-exclusivo" href="gracias-consultorio.html" class="rent-btn">Consultar por WhatsApp</a>
         </div>
 
         <div class="rent-card">
@@ -257,7 +257,7 @@
             <li>WiFi</li>
           </ul>
           <div class="rent-price">$12.000 <span>/ hora</span></div>
-          <a id="wa-hora" href="gracias.html" class="rent-btn">Consultar por WhatsApp</a>
+          <a id="wa-hora" href="gracias-consultorio.html" class="rent-btn">Consultar por WhatsApp</a>
         </div>
       </div>
 
@@ -271,7 +271,7 @@
       <h2>¿Te interesa alquilar un consultorio?</h2>
       <p>Escribinos por WhatsApp y coordinamos una visita a Centro CEMEK, Paraguay 1423, Rosario.</p>
       <div class="cta-btns">
-        <a id="wa-general" href="gracias.html" class="btn btn-white">Consultar por WhatsApp</a>
+        <a id="wa-general" href="gracias-consultorio.html" class="btn btn-white">Consultar por WhatsApp</a>
       </div>
     </div>
   </section>
@@ -303,7 +303,7 @@
           <h4>Contacto</h4>
           <ul>
             <li>📍 Paraguay 1423, Rosario</li>
-            <li>💬 <a href="https://wa.me/5493413211244">WhatsApp 341 321-1244</a></li>
+            <li>💬 <a href="https://wa.me/5493412175231">WhatsApp 341 217-5231</a></li>
           </ul>
         </div>
       </div>
@@ -325,7 +325,8 @@
     toggle.addEventListener('click', () => nav.classList.toggle('open'));
   </script>
   <script>
-    // Los botones de WhatsApp pasan primero por gracias.html para registrar la conversión de Google Ads
+    // Los botones de WhatsApp pasan primero por gracias-consultorio.html para registrar
+    // la conversión de Google Ads de la campaña de alquiler, separada de la de turnos
     var mensajesWa = {
       'wa-exclusivo': 'Hola! Me interesa el Consultorio Exclusivo en alquiler en Centro CEMEK. ¿Me podés brindar más información?',
       'wa-hora': 'Hola! Me interesa alquilar un consultorio por hora en Centro CEMEK. ¿Me podés brindar más información?',
@@ -335,7 +336,7 @@
       var btn = document.getElementById(id);
       if (!btn) return;
       var waUrl = 'https://wa.me/5493413211187?text=' + encodeURIComponent(mensajesWa[id]);
-      btn.href = 'gracias.html?wa=' + encodeURIComponent(waUrl);
+      btn.href = 'gracias-consultorio.html?wa=' + encodeURIComponent(waUrl);
     });
   </script>
   <script src="assets/chat-widget.js" defer></script>
